@@ -23,7 +23,23 @@
 //    }
 //}
 
-pipelineJob('theme-park-job-docker') {
+//pipelineJob('theme-park-job-docker') {
+//    definition {
+//        cpsScm {
+//            scm {
+//                git {
+//                    remote {
+//                        url 'https://github.com/ShubhTakale/theme-park-app.git'
+//                    }
+//                    branch 'main'
+//                    scriptPath('Jenkinsfile')
+//                }
+//            }
+//        }
+//    }
+//}
+
+pipelineJob('theme-park-job-aws') {
     definition {
         cpsScm {
             scm {
@@ -32,7 +48,7 @@ pipelineJob('theme-park-job-docker') {
                         url 'https://github.com/ShubhTakale/theme-park-app.git'
                     }
                     branch 'main'
-                    scriptPath('Jenkinsfile')
+                    scriptPath('Jenkinsfile-aws')
                 }
             }
         }
